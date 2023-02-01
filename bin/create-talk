@@ -1,0 +1,34 @@
+#! /bin/bash
+
+
+main() {
+  local _slug=$1
+
+  local cwd=
+  cwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+
+  local _template_dir="${cwd}"/../talk-template/
+
+  local _dir="${cwd}"/../${_slug}
+  test -d "${_dir}" && exit 1
+
+  mkdir -p "${_dir}"
+  find "${_template_dir}" -type f |
+    while read -r f; do
+      cp "${f}" "${_dir}"
+    done
+
+  local _title=${_slug//-/ }
+  local _tags=
+  for el in ${_title}; do
+    _tags="${_tags}#${el} "
+  done
+
+  find "${_dir}" -type f |
+    while read -r f; do
+      sed -i "s#TALK_TITLE#${_title}#" "${f}"
+      sed -i "s~TALK_TAGS~${_tags}~" "${f}"
+    done
+}
+
+main "$@"
