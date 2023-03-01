@@ -84,6 +84,11 @@ $ cat pom.xml | ./version.sed
 
 ## Summary
 
+- Search and replace
+- Great for searching too 
+- Line based
+- Can work on blocks too
+
 ---
 
 ## Delve further
