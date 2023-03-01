@@ -1,0 +1,56 @@
+
+* Create talk
+** Find Content
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:45]--[2023-03-01 Wed 19:53] =>  0:08
+:END:
+** Work on HTML template
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:50]--[2023-03-01 Wed 19:55] =>  0:05
+:END:
+** Write slides
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:54]--[2023-03-01 Wed 19:56] =>  0:02
+:END:
+
+* Get set up for recording
+** Wire up USB camera
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:44]--[2023-03-01 Wed 19:56] =>  0:12
+:END:
+** Configure correct microphone
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:33]--[2023-03-01 Wed 19:56] =>  0:23
+:END:
+** Check up on my ffmpeg recording script
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:44]--[2023-03-01 Wed 19:51] =>  0:07
+:END:
+** Learn OBS Studio
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:11]--[2023-03-01 Wed 19:56] =>  0:45
+:END:
+
+* Publish video
+** Upload to YouTube
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:21]--[2023-03-01 Wed 19:56] =>  0:35
+:END:
+** Post on 🐘
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:31]--[2023-03-01 Wed 19:56] =>  0:25
+:END:
+** Post on 🐦
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:32]--[2023-03-01 Wed 19:56] =>  0:24
+:END:
+** Post on 🔗
+:LOGBOOK:
+CLOCK: [2023-03-01 Wed 19:33]--[2023-03-01 Wed 19:56] =>  0:23
+:END:
+
+
+* Report
+#+BEGIN: clocktable :scope file :maxlevel 3 :narrow 80
+#+CAPTION: Clock summary at [2023-03-01 Wed 19:56]
+#+END:

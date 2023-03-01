@@ -1,0 +1,37 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,400italic,700&subset=latin");
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+body {
+    background-color: #222235;
+    color: #b8c0d4;
+}
+
+a {
+    color: #06c993;
+}
+
+a:hover {
+    color: #f561ab;
+}
+
+h1, h2, h3 {
+    font-family: 'Special Elite', cursive;
+}
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3.5em;
+}
+
+table {
+    width: 100%;
+}
