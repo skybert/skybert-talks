@@ -1,3 +1,4 @@
+#+html_head: <link rel="stylesheet" type="text/css" href="skybert.css" />
 
 * Create talk
 ** Find Content
@@ -6,12 +7,15 @@ CLOCK: [2023-03-01 Wed 19:45]--[2023-03-01 Wed 19:53] =>  0:08
 :END:
 ** Work on HTML template
 :LOGBOOK:
+CLOCK: [2023-03-01 Wed 20:30]--[2023-03-01 Wed 20:31] =>  0:01
 CLOCK: [2023-03-01 Wed 19:50]--[2023-03-01 Wed 19:55] =>  0:05
 :END:
 ** Write slides
 :LOGBOOK:
+CLOCK: [2023-03-01 Wed 20:45]
 CLOCK: [2023-03-01 Wed 19:54]--[2023-03-01 Wed 19:56] =>  0:02
 :END:
+
 
 * Get set up for recording
 ** Wire up USB camera
@@ -52,5 +56,24 @@ CLOCK: [2023-03-01 Wed 19:33]--[2023-03-01 Wed 19:56] =>  0:23
 
 * Report
 #+BEGIN: clocktable :scope file :maxlevel 3 :narrow 80
-#+CAPTION: Clock summary at [2023-03-01 Wed 19:56]
+#+CAPTION: Clock summary at [2023-03-01 Wed 20:47]
+| <80>                                       |        |      |
+| Headline                                   |   Time |      |
+|--------------------------------------------+--------+------|
+| *Total time*                               | *3:30* |      |
+|--------------------------------------------+--------+------|
+| Create talk                                |   0:16 |      |
+| \_  Find Content                           |        | 0:08 |
+| \_  Work on HTML template                  |        | 0:06 |
+| \_  Write slides                           |        | 0:02 |
+| Get set up for recording                   |   1:27 |      |
+| \_  Wire up USB camera                     |        | 0:12 |
+| \_  Configure correct microphone           |        | 0:23 |
+| \_  Check up on my ffmpeg recording script |        | 0:07 |
+| \_  Learn OBS Studio                       |        | 0:45 |
+| Publish video                              |   1:47 |      |
+| \_  Upload to YouTube                      |        | 0:35 |
+| \_  Post on 🐘                             |        | 0:25 |
+| \_  Post on 🐦                             |        | 0:24 |
+| \_  Post on 🔗                             |        | 0:23 |
 #+END:
