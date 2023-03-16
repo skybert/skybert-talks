@@ -1,0 +1,4 @@
+[app] - http/rest -> [lb]
+[lb] -> [hazelcast1:5701], [hazelcast2:5701]
+[hazelcast1:5701] -> [hazelcast2:5701]
+[hazelcast2:5701] -> [hazelcast1:5701]

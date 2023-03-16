@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-05-17 Tue 18:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Torstein Krause Johansen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org044a817">1. From vanilla Emacs to Java IDE in 5 minutes</a>
+<ul>
+<li><a href="#org3a88544">1.1. <span class="done DONE">DONE</span> Set up package manager</a></li>
+<li><a href="#org67b8150">1.2. <span class="done DONE">DONE</span> Font &amp; theme</a></li>
+<li><a href="#orgb688204">1.3. <span class="done DONE">DONE</span> Show shortcuts</a></li>
+<li><a href="#orgcc99c30">1.4. <span class="todo TODO">TODO</span> Install lsp-java &amp; dap-java</a></li>
+<li><a href="#orgf9de7f2">1.5. <span class="todo TODO">TODO</span> Project navigation</a></li>
+<li><a href="#orga714613">1.6. <span class="todo TODO">TODO</span> Git integration</a></li>
+<li><a href="#org6baa491">1.7. <span class="todo TODO">TODO</span> gitignore to exclude target</a></li>
+<li><a href="#org40c6c22">1.8. <span class="todo TODO">TODO</span> Build project</a></li>
+<li><a href="#org6ce166f">1.9. <span class="todo TODO">TODO</span> Fix errors and warnings</a></li>
+<li><a href="#orgb18f02a">1.10. <span class="todo TODO">TODO</span> Fancy GUI is there if you want it</a></li>
+<li><a href="#org9bd3c74">1.11. <span class="todo TODO">TODO</span> Run JUnit test</a></li>
+<li><a href="#orgb78784a">1.12. <span class="todo TODO">TODO</span> Fix compile escape codes</a></li>
+<li><a href="#orgefe6e7e">1.13. <span class="todo TODO">TODO</span> Debug JUnit test</a></li>
+<li><a href="#orgda2dfbc">1.14. <span class="todo TODO">TODO</span> IDEA style shortcuts</a></li>
+<li><a href="#orga75f5d6">1.15. <span class="todo TODO">TODO</span> Create code snippets</a></li>
+<li><a href="#org5165aec">1.16. <span class="todo TODO">TODO</span> My Java mode hook</a></li>
+<li><a href="#orgcc5b0c1">1.17. <span class="todo TODO">TODO</span> If your Emacs Java setup isn't working</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org044a817" class="outline-2">
+<h2 id="org044a817"><span class="section-number-2">1.</span> From vanilla Emacs to Java IDE in 5 minutes</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org3a88544" class="outline-3">
+<h3 id="org3a88544"><span class="section-number-3">1.1.</span> <span class="done DONE">DONE</span> Set up package manager</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">condition-case</span> nil
+    (<span style="color: #e17df3;">require</span> '<span style="color: #f561ab;">use-package</span>)
+  (file-error
+   (<span style="color: #e17df3;">require</span> '<span style="color: #f561ab;">package</span>)
+   (add-to-list 'package-archives '(<span style="color: #06c993;">"melpa"</span> . <span style="color: #06c993;">"http://melpa.org/packages/"</span>))
+   (package-initialize)
+   (package-refresh-contents)
+   (package-install 'use-package)
+   (<span style="color: #e17df3;">setq</span> use-package-always-ensure t)
+   (<span style="color: #e17df3;">require</span> '<span style="color: #f561ab;">use-package</span>)))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org67b8150" class="outline-3">
+<h3 id="org67b8150"><span class="section-number-3">1.2.</span> <span class="done DONE">DONE</span> Font &amp; theme</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-elisp">(set-face-attribute
+ 'default
+ nil
+ <span style="color: #f561ab;">:family</span> <span style="color: #06c993;">"Source Code Pro"</span>
+ <span style="color: #f561ab;">:height</span> 150
+ <span style="color: #f561ab;">:weight</span> 'medium
+ <span style="color: #f561ab;">:width</span> 'normal)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">sweet-theme</span> <span style="color: #f561ab;">:ensure</span> t <span style="color: #f561ab;">:init</span> (load-theme 'sweet t))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb688204" class="outline-3">
+<h3 id="orgb688204"><span class="section-number-3">1.3.</span> <span class="done DONE">DONE</span> Show shortcuts</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-src-container">
+<pre class="src src-elisp">(load <span style="color: #06c993;">"/usr/local/src/interaction-log.el/interaction-log.el"</span>)
+(ilog-show-in-new-frame)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcc99c30" class="outline-3">
+<h3 id="orgcc99c30"><span class="section-number-3">1.4.</span> <span class="todo TODO">TODO</span> Install lsp-java &amp; dap-java</h3>
+<div class="outline-text-3" id="text-1-4">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">projectile</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">flycheck</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">yasnippet</span> <span style="color: #f561ab;">:config</span> (yas-global-mode))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">lsp-mode</span> <span style="color: #f561ab;">:hook</span> ((lsp-mode . lsp-enable-which-key-integration))
+  <span style="color: #f561ab;">:config</span> (<span style="color: #e17df3;">setq</span> lsp-completion-enable-additional-text-edit nil))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">hydra</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">company</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">lsp-ui</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">which-key</span> <span style="color: #f561ab;">:config</span> (which-key-mode))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">lsp-java</span> <span style="color: #f561ab;">:config</span> (add-hook 'java-mode-hook 'lsp))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">dap-mode</span> <span style="color: #f561ab;">:after</span> lsp-mode <span style="color: #f561ab;">:config</span> (dap-auto-configure-mode))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">dap-java</span> <span style="color: #f561ab;">:ensure</span> nil)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">helm-lsp</span>)
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">helm</span>
+  <span style="color: #f561ab;">:config</span> (helm-mode))
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">lsp-treemacs</span>)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf9de7f2" class="outline-3">
+<h3 id="orgf9de7f2"><span class="section-number-3">1.5.</span> <span class="todo TODO">TODO</span> Project navigation</h3>
+<div class="outline-text-3" id="text-1-5">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">projectile</span>
+    <span style="color: #f561ab;">:ensure</span> t
+    <span style="color: #f561ab;">:init</span> (projectile-mode +1)
+    <span style="color: #f561ab;">:config</span>
+    (define-key
+        projectile-mode-map
+        (kbd <span style="color: #06c993;">"C-c p"</span>)
+      'projectile-command-map))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga714613" class="outline-3">
+<h3 id="orga714613"><span class="section-number-3">1.6.</span> <span class="todo TODO">TODO</span> Git integration</h3>
+<div class="outline-text-3" id="text-1-6">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">magit</span>)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6baa491" class="outline-3">
+<h3 id="org6baa491"><span class="section-number-3">1.7.</span> <span class="todo TODO">TODO</span> gitignore to exclude target</h3>
+</div>
+<div id="outline-container-org40c6c22" class="outline-3">
+<h3 id="org40c6c22"><span class="section-number-3">1.8.</span> <span class="todo TODO">TODO</span> Build project</h3>
+</div>
+<div id="outline-container-org6ce166f" class="outline-3">
+<h3 id="org6ce166f"><span class="section-number-3">1.9.</span> <span class="todo TODO">TODO</span> Fix errors and warnings</h3>
+</div>
+<div id="outline-container-orgb18f02a" class="outline-3">
+<h3 id="orgb18f02a"><span class="section-number-3">1.10.</span> <span class="todo TODO">TODO</span> Fancy GUI is there if you want it</h3>
+</div>
+<div id="outline-container-org9bd3c74" class="outline-3">
+<h3 id="org9bd3c74"><span class="section-number-3">1.11.</span> <span class="todo TODO">TODO</span> Run JUnit test</h3>
+</div>
+<div id="outline-container-orgb78784a" class="outline-3">
+<h3 id="orgb78784a"><span class="section-number-3">1.12.</span> <span class="todo TODO">TODO</span> Fix compile escape codes</h3>
+<div class="outline-text-3" id="text-1-12">
+<div class="org-src-container">
+<pre class="src src-elisp">(add-hook 'compilation-filter-hook
+          (<span style="color: #e17df3;">lambda</span> () (ansi-color-apply-on-region (point-min) (point-max))))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgefe6e7e" class="outline-3">
+<h3 id="orgefe6e7e"><span class="section-number-3">1.13.</span> <span class="todo TODO">TODO</span> Debug JUnit test</h3>
+</div>
+<div id="outline-container-orgda2dfbc" class="outline-3">
+<h3 id="orgda2dfbc"><span class="section-number-3">1.14.</span> <span class="todo TODO">TODO</span> IDEA style shortcuts</h3>
+<div class="outline-text-3" id="text-1-14">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">lsp-mode</span>
+    <span style="color: #f561ab;">:bind</span>
+    (<span style="color: #f561ab;">:map</span> lsp-mode-map
+          ((<span style="color: #06c993;">"\C-\M-b"</span> . lsp-find-implementation)
+           (<span style="color: #06c993;">"M-RET"</span> . lsp-execute-code-action))))
+
+(<span style="color: #e17df3;">use-package</span> <span style="color: #f561ab;">dap-java</span>
+  <span style="color: #f561ab;">:ensure</span> nil
+  <span style="color: #f561ab;">:after</span> (lsp-java)
+
+  <span style="color: #f561ab;">:config</span>
+  (global-set-key (kbd <span style="color: #06c993;">"&lt;f7&gt;"</span>) 'dap-step-in)
+  (global-set-key (kbd <span style="color: #06c993;">"&lt;f8&gt;"</span>) 'dap-next)
+  (global-set-key (kbd <span style="color: #06c993;">"&lt;f9&gt;"</span>) 'dap-continue))  
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga75f5d6" class="outline-3">
+<h3 id="orga75f5d6"><span class="section-number-3">1.15.</span> <span class="todo TODO">TODO</span> Create code snippets</h3>
+</div>
+<div id="outline-container-org5165aec" class="outline-3">
+<h3 id="org5165aec"><span class="section-number-3">1.16.</span> <span class="todo TODO">TODO</span> My Java mode hook</h3>
+<div class="outline-text-3" id="text-1-16">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #e17df3;">defun</span> <span style="color: #06c993;">my-java-mode-hook</span> ()
+  (auto-fill-mode)
+  (flycheck-mode)
+  (git-gutter+-mode)
+  (subword-mode)
+  (yas-minor-mode)
+  (set-fringe-style '(8 . 0))
+  (define-key c-mode-base-map (kbd <span style="color: #06c993;">"C-M-j"</span>) 'tkj-insert-serial-version-uuid)
+  (define-key c-mode-base-map (kbd <span style="color: #06c993;">"C-m"</span>) 'c-context-line-break)
+  (define-key c-mode-base-map (kbd <span style="color: #06c993;">"S-&lt;f7&gt;"</span>) 'gtags-find-tag-from-here)
+
+  <span style="color: #808693; font-style: italic;">;; </span><span style="color: #808693; font-style: italic;">Fix indentation for anonymous classes</span>
+  (c-set-offset 'substatement-open 0)
+  (<span style="color: #e17df3;">if</span> (assoc 'inexpr-class c-offsets-alist)
+      (c-set-offset 'inexpr-class 0))
+
+  <span style="color: #808693; font-style: italic;">;; </span><span style="color: #808693; font-style: italic;">Indent arguments on the next line as indented body.</span>
+  (c-set-offset 'arglist-intro '++))
+(add-hook 'java-mode-hook 'my-java-mode-hook)  
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcc5b0c1" class="outline-3">
+<h3 id="orgcc5b0c1"><span class="section-number-3">1.17.</span> <span class="todo TODO">TODO</span> If your Emacs Java setup isn't working</h3>
+<div class="outline-text-3" id="text-1-17">
+<p>
+<a href="https://github.com/emacs-lsp/lsp-java#quick-start">https://github.com/emacs-lsp/lsp-java#quick-start</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Torstein Krause Johansen</p>
+<p class="date">Created: 2022-05-17 Tue 18:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
