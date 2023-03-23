@@ -320,13 +320,6 @@ kbd {
 /*********************************************
  * Skybert's customisations
  *********************************************/
-.skybert-logo-bottom-left {
-  background-image: url("../theme/skybert.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 0% 95%;
-  background-size: 126.54px 23.0px;
-}
 
 h1:first-letter,
 h2:first-letter,
