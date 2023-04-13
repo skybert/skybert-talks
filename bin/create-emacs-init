@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+main() {
+  local dir=$1
+  local slides=${dir}/slides.md
+  local init_el=${dir}/init.el
+  test -f "${slides}" || exit 1
+  sed -nr \
+      '/```lisp/,/```/ {
+        /^```lisp/d
+        s/^```//
+        p
+      }' \
+      "${slides}" > "${init_el}"
+}
+
+main "$@"
