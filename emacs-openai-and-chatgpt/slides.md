@@ -99,7 +99,7 @@ M-x copilot-mode
 
 - Research assistant: [c3po.el](https://github.com/d1egoaz/c3po.el)
 - Pair programming buddy: [copilot.el](https://github.com/zerolfx/copilot.el)
-- [init.el with Emacs conf from this talk](init.el)
+- Emacs conf from this talk: [init.el](init.el)
 
 ---
 

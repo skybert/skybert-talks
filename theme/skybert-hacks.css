@@ -56,13 +56,15 @@ kbd {
   --link-color: #06c993;
   --link-color-hover: #6ca0e8;
   --selection-background-color: #f561ab;
-  --selection-color: #222235; }
+  --selection-color: #222235;
+}
 
-.reveal-viewport {
+body {
   background: #222235;
-  background-color: #222235; }
+  background-color: #222235;
+}
 
-.reveal {
+body, .reveal {
   font-family: 'Special Elite', sans-serif;
   font-size: 42px;
   font-weight: normal;
@@ -267,10 +269,11 @@ kbd {
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a {
+a {
   color: #f561ab;
   text-decoration: none;
-  transition: color .15s ease; }
+  transition: color .15s ease;
+}
 
 .reveal a:hover {
   color: #06c993;
