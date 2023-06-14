@@ -1,0 +1,8 @@
+- bash: [bash coding 005 sed](bash-coding-005-sed) [[video]()]
+- desktop: [Window Manager](desktop-window-maker) [[video](https://www.youtube.com/watch?v=nS9W-wlJHPA)]
+- emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt) [[video](https://www.youtube.com/watch?v=H8jvhz0CGzU)]
+- emacs: [js](emacs-js-setup) [[video]()]
+- emacs: [Jumping around](emacs-jump-around) [[video]()]
+- emacs: [Pretty org reports](emacs-pretty-org-reports) [[video]()]
+- emacs: [Python setup](emacs-python-setup) [[video](https://www.youtube.com/watch?v=JmmTUIahB1U)]
+- hazelcast: [Hazelcast Discovery by TCP](hazelcast-discovery-by-tcp) [[video]()]

@@ -1,0 +1,27 @@
+#! /bin/bash
+
+main() {
+  local _cwd=
+  _cwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+
+  find "${_cwd}"/.. -maxdepth 1 -type d |
+    grep -v .git$ |
+    grep -v reveal.js |
+    grep -v bin$ |
+    grep -v theme$ |
+    grep -v talk-template |
+    sed "s#${_cwd}/../##" |
+    while read -r talk; do
+      index="${_cwd}"/../${talk}/index.html
+      test -r "${index}" || continue
+
+      category=$(printf "%s\\n" "${talk}" | cut -d- -f1)
+      title=$(sed -nr 's#<title>(.*)</title>#\1#p' "${index}" | sed 's#^[ ]*##')
+      video=$(sed -n 1p "${_cwd}"/../${talk}/video.txt)
+      printf "– %s: [%s](%s) [[video](%s)]\\n" "${category}" "${title}" "${talk}" "${video}" |
+        sed 's#–#-#'
+    done |
+    sort > "${_cwd}/../recorded-talks.md"
+}
+
+main "$@"

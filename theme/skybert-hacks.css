@@ -59,7 +59,7 @@ kbd {
   --selection-color: #222235;
 }
 
-body {
+body, .reveal-viewport {
   background: #222235;
   background-color: #222235;
 }
@@ -275,7 +275,7 @@ a {
   transition: color .15s ease;
 }
 
-.reveal a:hover {
+a:hover {
   color: #06c993;
   text-shadow: none;
   border: none; }
