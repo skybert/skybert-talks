@@ -1,4 +1,5 @@
 - bash: [bash coding 005 sed](bash-coding-005-sed) [[video]()]
+- bash: [bash coding 006 unit testing](bash-coding-006-unit-testing) [[video]()]
 - desktop: [Window Manager](desktop-window-maker) [[video](https://www.youtube.com/watch?v=nS9W-wlJHPA)]
 - emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt) [[video](https://www.youtube.com/watch?v=H8jvhz0CGzU)]
 - emacs: [js](emacs-js-setup) [[video]()]
