@@ -2,7 +2,7 @@
 - bash: [bash coding 006 unit testing](bash-coding-006-unit-testing) [[video](https://youtu.be/XsdHnQ9OruQ)]
 - desktop: [Window Manager](desktop-window-maker) [[video](https://www.youtube.com/watch?v=nS9W-wlJHPA)]
 - emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt) [[video](https://www.youtube.com/watch?v=H8jvhz0CGzU)]
-- emacs: [js](emacs-js-setup)
+- emacs: [JavaScript](emacs-js-setup)
 - emacs: [Jumping around](emacs-jump-around)
 - emacs: [Pretty org reports](emacs-pretty-org-reports)
 - emacs: [Python setup](emacs-python-setup) [[video](https://www.youtube.com/watch?v=JmmTUIahB1U)]
