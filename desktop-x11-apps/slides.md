@@ -6,6 +6,7 @@
 - `xeyes`
 - `xmessage`
 - `xmag`
+- Make them look nice
 
 ---
 
@@ -26,6 +27,13 @@
 ---
 
 ## xmag
+
+---
+
+## make them look nice
+
+- Translucency
+- Rounded corners
 
 ---
 

@@ -19,7 +19,9 @@ Here's a [list of recorded talks](recorded-talks.md)
 - bash: seek and you shall find
 - desktop: Budgie
 - desktop: GhostBSD
-- desktop: Trinity
-- desktop: Small and brilliant X11 apps I still use
-- emacs: C and C++ setup
 - desktop: Make macOS as Unix workstation
+- desktop: Small and brilliant X11 apps I still use
+- desktop: Trinity
+- emacs: C and C++ setup
+- kafka: Performance tuning
+- kafka: TCP connections
