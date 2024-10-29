@@ -1,11 +1,17 @@
-- bash: [bash coding 005 sed](bash-coding-005-sed)
-- bash: [bash coding 006 unit testing](bash-coding-006-unit-testing) [[video](https://youtu.be/XsdHnQ9OruQ)]
-- desktop: [Window Manager](desktop-window-maker) [[video](https://www.youtube.com/watch?v=nS9W-wlJHPA)]
-- emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt) [[video](https://www.youtube.com/watch?v=H8jvhz0CGzU)]
-- emacs: [JavaScript](emacs-js-setup)
-- emacs: [Jumping around](emacs-jump-around)
+- bash: [bash coding 005 sed](bash-coding-005-sed) [video](https://www.youtube.com/watch?v=nYnZj7_QX_c)
+- bash: [bash coding 006 unit testing](bash-coding-006-unit-testing) [video](https://youtu.be/XsdHnQ9OruQ)
+- bash: [find](bash-find)
+- desktop: [Window Manager](desktop-window-maker) [video](https://www.youtube.com/watch?v=nS9W-wlJHPA)
+- desktop: [macos](desktop-macos-unix)
+- desktop: [x11](desktop-x11-apps)
+- emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt) [video](https://www.youtube.com/watch?v=H8jvhz0CGzU)
+- emacs: [Jumping around](emacs-jump-around) [video](https://youtu.be/BHWL13sQBWY)
 - emacs: [Pretty org reports](emacs-pretty-org-reports)
-- emacs: [Python setup](emacs-python-setup) [[video](https://www.youtube.com/watch?v=JmmTUIahB1U)]
+- emacs: [Python setup](emacs-python-setup) [video](https://www.youtube.com/watch?v=JmmTUIahB1U)
 - emacs: [Work on remote servers with your local Emacs using tramp](emacs-tramp)
+- emacs: [js](emacs-js-setup)
 - hazelcast: [Hazelcast Discovery by TCP](hazelcast-discovery-by-tcp)
-- unix: [Unix aliases](unix-aliases)
+- kafka: [java](kafka-java) [video](https://www.youtube.com/watch?v=NMjTyi_p6Z8)
+- kafka: [performance](kafka-performance-tuning)
+- kafka: [tcp](kafka-tcp-connections)
+- unix: [Unix aliases](unix-aliases) [video](https://youtu.be/6gNkmwig0rU)

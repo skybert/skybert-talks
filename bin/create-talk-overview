@@ -21,7 +21,7 @@ main() {
       video_file="${_cwd}"/../${talk}/video.txt
       if [ -r "${video_file}" ]; then
         video=$(sed -n 1p "${video_file}")
-        printf "– %s: [%s](%s) [[video](%s)]\\n" "${category}" "${title}" "${talk}" "${video}" |
+        printf "– %s: [%s](%s) [video](%s)\\n" "${category}" "${title}" "${talk}" "${video}" |
           sed 's#–#-#'
       else
         printf "– %s: [%s](%s)\\n" "${category}" "${title}" "${talk}" |
