@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css"/>
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css"/>
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme"/>
+    <link rel="stylesheet" href="../theme/skybert-hacks.css" id="theme"/>
+    <title>eglot</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="skybert-logo-bottom-left">
+          <section data-background-image="../theme/skybert-title-background.png">
+            <h1 class="skybert">
+              emacs<br/>
+              <span style="font-size: 3em;">eglot</span><br/>
+              java
+            </h1>
+            <p class="skybert" style="text-align: right;">
+              <!-- by <a>torstein@skybert.net</a> -->
+              <code>
+                #emacs #eglot #java 
+                <br/>
+                <a href="https://youtube.com/@skybert">
+                  youtube.com/@skybert
+                </a>
+              </code>
+            </p>
+          </section>
+        </section>
+        <section data-markdown="slides.md"
+                 data-separator="^---"
+                 data-separator-vertical="^==="
+                 data-separator-notes="^Note:"
+                 data-charset="utf-8">
+        </section>
+        <section class="skybert-logo-bottom-left">
+          <section data-background-image="../theme/skybert-title-background.png">
+            <h1 class="skybert">Happy hacking! 🙇</h1>
+            <p class="skybert" style="text-align: left;">
+              🕸️
+              <a href="https://skybert.net">
+                skybert.net
+              </a><br/>
+              🐘
+              <a rel="me" href="https://hachyderm.io/@skybert">@skybert@hachyderm.io</a><br/>
+              🎥
+              <a href="https://www.youtube.com/@skybert?sub_confirmation=1">
+                youtube.com/@skybert
+              </a><br/>
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+     Reveal.initialize({
+       hash: true,
+       controls: false,
+       progress: false,
+       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ],
+       transition: 'none'
+     });
+    </script>
+  </body>
+</html>
