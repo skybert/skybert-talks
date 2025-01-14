@@ -20,8 +20,8 @@ Here's a [list of recorded talks](recorded-talks.md)
 - desktop: Budgie
 - desktop: GhostBSD
 - desktop: Make macOS as Unix workstation
-- desktop: Small and brilliant X11 apps I still use
 - desktop: Trinity
 - emacs: C and C++ setup
+- emacs: Read RSS and Atom feeds
 - kafka: Performance tuning
 - kafka: TCP connections
