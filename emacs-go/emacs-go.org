@@ -1,0 +1,41 @@
+* Go & Emacs [0/9]
+** 🆕 go-mode
+#+begin_src conf
+M-x package-install RET go-mode
+#+end_src
+
+** 🆕 gopls - Go, please!
+#+begin_src text
+# pacman -S gopls
+#+end_src
+
+** 🆕eglot - LSP in Emacs
+#+begin_src conf
+M-x eglot RET
+#+end_src
+
+** 🆕 Lets' write som Go
+** 🆕 Useful on-write hooks
+#+begin_src emacs-lisp
+(add-hook
+  'before-save-hook
+  #'gofmt-before-save)
+#+end_src
+
+** 🆕 Write some Go tests
+** 🆕 Run your Go tests
+#+begin_src conf
+M-x package-install gotest
+#+end_src
+
+** 🆕 Debugger
+#+begin_src markdown
+paru -S extra/delve
+#+end_src
+
+** 🆕 Debugger
+#+begin_src conf
+*M-x package-install RET dape
+*#+end_src
+
+** 🆕 Debug your Go code
