@@ -1,80 +1,81 @@
 
-## Agenda
+# Go & Emacs <code>[14/14]</code>
 
----
 
-## go-mode
+## ✅ go-mode
 
-```text
-M-x package-install RET go-mode RET
-```
+    M-x package-install RET go-mode
 
----
 
-## gopls
+## ✅ gopls - Go, please!
 
-`gopls` - "Go please!"
+    # pacman -S gopls
 
-To install the official Go language server, I did:
 
-```text
-# pacman -S gopls
-```
-a
----
+## ✅ eglot - LSP in Emacs
 
-## eglot
+    M-x eglot RET
 
-```text
-M-x eglot RET
-```
 
----
+## ✅ Lets' write som Go
 
-## Debugger
 
-I researched a bit, and it seemed from colleagues and Reddit
-discussions, that [Delve](https://github.com/go-delve/delve) is
-currently the best one, so I searched for that:
+## ✅ Useful on-write hooks
 
-```text
-$ paru -Ss delve go
-extra/delve 1.24.1-1 [0 B 15.11 MiB] [Installed]
-    A debugger for the Go programming language.
-```
+    (add-hook
+      'before-save-hook
+      #'gofmt-before-save)
 
-```text
-# paru -S extra/delve
-```
 
----
+## ✅ Write some Go tests
 
-## Debugger
 
-```text
-M-x package-install RET dape RET
-```
+## ✅ Run your Go tests
 
----
+    M-x package-install gotest
 
-## Debugger
 
-```lisp
-(setq dape-buffer-window-arrangement 'right)
-```
+## ✅ Debugger
 
----
+    paru -S extra/delve
 
-## Running tests
 
-```lisp
-M-x package-install RET gotest RET
-```
+## ✅ Debugger
 
----
+\#+begin<sub>src</sub> conf
+M-x package-install RET dape
+\*#+end<sub>src</sub>
 
-## Summary
 
----
+## ✅ Debug your Go code
 
-## Delve further
+-   Debug `main.go`
+-   Debug `main_test.go`
+-   Attach to remote Go process
+-   See my debugger setup here: [.emacs](file:///home/torstein/.emacs)
+
+
+## ✅ Go REPL in Emacs
+
+    M-x package-install RET gorepl-mode
+    M-x gorepl-run
+
+
+## ✅ Read Go doc in Emacs
+
+[Emacs Web Browser (eww)](https://www.gnu.org/software/emacs/manual/html_mono/eww.html)
+
+    M-x eww-list-bookmarks
+
+
+## ✅ Commit Go code in Emacs
+
+
+## ✅ Summary
+
+-   Go itself: [go.dev](https://go.dev/)
+-   Go language server: [gopls](https://go.dev/gopls/)
+-   Go debugger: [dlv](https://github.com/go-delve/delve)
+-   Emacs & Go: [go-mode](https://github.com/dominikh/go-mode.el), [eglot](https://github.com/joaotavora/eglot), [dape](https://github.com/svaante/dape), [gotest.el](https://github.com/nlamirault/gotest.el), [gorepl-mode](https://github.com/manute/gorepl-mode)
+-   Emacs web browser: [eww](https://www.gnu.org/software/emacs/manual/html_mono/eww.html)
+
