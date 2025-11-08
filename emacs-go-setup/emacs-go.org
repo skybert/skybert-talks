@@ -1,63 +1,63 @@
-* Go & Emacs [0/14]
-** 🆕 go-mode
+* Go & Emacs [14/14]
+** ✅ go-mode
 #+begin_src conf
 M-x package-install RET go-mode
 #+end_src
 
-** 🆕 gopls - Go, please!
+** ✅ gopls - Go, please!
 #+begin_src text
 # pacman -S gopls
 #+end_src
 
-** 🆕 eglot - LSP in Emacs
+** ✅ eglot - LSP in Emacs
 #+begin_src conf
 M-x eglot RET
 #+end_src
 
-** 🆕 Lets' write som Go
-** 🆕 Useful on-write hooks
+** ✅ Lets' write som Go
+** ✅ Useful on-write hooks
 #+begin_src emacs-lisp
 (add-hook
   'before-save-hook
   #'gofmt-before-save)
 #+end_src
 
-** 🆕 Write some Go tests
-** 🆕 Run your Go tests
+** ✅ Write some Go tests
+** ✅ Run your Go tests
 #+begin_src conf
 M-x package-install gotest
 #+end_src
 
-** 🆕 Debugger
+** ✅ Debugger
 #+begin_src markdown
 paru -S extra/delve
 #+end_src
 
-** 🆕 Debugger
+** ✅ Debugger
 #+begin_src conf
 M-x package-install RET dape
 *#+end_src
 
-** 🆕 Debug your Go code
+** ✅ Debug your Go code
 - Debug =main.go=
 - Debug =main_test.go=
 - Attach to remote Go process
 - See my debugger setup here: [[~/.emacs][.emacs]]
-** 🆕 Go REPL in Emacs
+** ✅ Go REPL in Emacs
 #+begin_src perl
   M-x package-install RET gorepl-mode
   M-x gorepl-run
 #+end_src
 
-** 🆕 Read Go doc in Emacs
+** ✅ Read Go doc in Emacs
 [[https://www.gnu.org/software/emacs/manual/html_mono/eww.html][Emacs Web Browser (eww)]]
 
 #+begin_src perl
 M-x eww-list-bookmarks
 #+end_src
 
-** 🆕 Commit Go code in Emacs
-** 🆕 Summary
+** ✅ Commit Go code in Emacs
+** ✅ Summary
 - Go itself: [[https://go.dev/][go.dev]]
 - Go language server: [[https://go.dev/gopls/][gopls]]
 - Go debugger: [[https://github.com/go-delve/delve][dlv]]
