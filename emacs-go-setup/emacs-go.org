@@ -1,4 +1,4 @@
-* Go & Emacs [0/9]
+* Go & Emacs [0/14]
 ** 🆕 go-mode
 #+begin_src conf
 M-x package-install RET go-mode
@@ -35,7 +35,7 @@ paru -S extra/delve
 
 ** 🆕 Debugger
 #+begin_src conf
-*M-x package-install RET dape
+M-x package-install RET dape
 *#+end_src
 
 ** 🆕 Debug your Go code
@@ -43,6 +43,23 @@ paru -S extra/delve
 - Debug =main_test.go=
 - Attach to remote Go process
 - See my debugger setup here: [[~/.emacs][.emacs]]
+** 🆕 Go REPL in Emacs
+#+begin_src perl
+  M-x package-install RET gorepl-mode
+  M-x gorepl-run
+#+end_src
+
 ** 🆕 Read Go doc in Emacs
+[[https://www.gnu.org/software/emacs/manual/html_mono/eww.html][Emacs Web Browser (eww)]]
+
+#+begin_src perl
+M-x eww-list-bookmarks
+#+end_src
+
 ** 🆕 Commit Go code in Emacs
 ** 🆕 Summary
+- Go itself: [[https://go.dev/][go.dev]]
+- Go language server: [[https://go.dev/gopls/][gopls]]
+- Go debugger: [[https://github.com/go-delve/delve][dlv]]
+- Emacs & Go: [[https://github.com/dominikh/go-mode.el][go-mode]], [[https://github.com/joaotavora/eglot][eglot]], [[https://github.com/svaante/dape][dape]], [[https://github.com/nlamirault/gotest.el][gotest.el]], [[https://github.com/manute/gorepl-mode][gorepl-mode]]
+- Emacs web browser: [[https://www.gnu.org/software/emacs/manual/html_mono/eww.html][eww]]
