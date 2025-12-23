@@ -28,12 +28,14 @@ main() {
     _tags="${_tags}#${el} "
   done
 
+  sed="sed"
+  command -v gsed &> /dev/null && sed="gsed"
   find "${_dir}" -type f |
     while read -r f; do
-      sed -i "s#TALK_TITLE_PRE#${_title_pre}#" "${f}"
-      sed -i "s#TALK_TITLE_BIG#${_title_big}#" "${f}"
-      sed -i "s#TALK_TITLE_POST#${_title_post}#" "${f}"
-      sed -i "s~TALK_TAGS~${_tags}~" "${f}"
+      "${sed}" -i "s#TALK_TITLE_PRE#${_title_pre}#" "${f}"
+      "${sed}" -i "s#TALK_TITLE_BIG#${_title_big}#" "${f}"
+      "${sed}" -i "s#TALK_TITLE_POST#${_title_post}#" "${f}"
+      "${sed}" -i "s~TALK_TAGS~${_tags}~" "${f}"
     done
 }
 
