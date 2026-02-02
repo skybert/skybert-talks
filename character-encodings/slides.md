@@ -832,6 +832,34 @@ An example of a [UTF-8 encoded file with BOM](hello-with-bom.txt)
 
 ---
 
+## BOM - adding one
+
+```perl
+$ sed -i '1s/^/\xef\xbb\xbf/' file-encoded-with-utf8.txt
+```
+
+---
+
+## BOM - telling the difference
+
+```text
+$ file hello-with*.txt
+hello-with-bom.txt:    Unicode text, UTF-8 (with BOM) text
+hello-without-bom.txt: Unicode text, UTF-8 text
+```
+
+---
+
+## BOM - telling the difference
+
+```perl
+$ head -c 3 hello-with-bom.txt | hexdump -C
+00000000  ef bb bf                                          |...|
+00000003
+```
+
+---
+
 ## BOM - beware
 
 > if you're counting bytes
@@ -841,15 +869,27 @@ An example of a [UTF-8 encoded file with BOM](hello-with-bom.txt)
 
 ---
 
+## Convert text file to another encoding
+
+Convert a text file from one character encoding to another.
+
+```perl
+$ iconv -f IBM273 -t UTF-8 file.txt > converted.txt
+```
+
+---
+
 ## HTTP
 
 When we surf on [facebook.com](http://facebook.com) or write Java code
 that consume REST, RPC over HTTP and SOAP services, the server says
 which encoding the contents are serialised with:
 
-    $ GET http://vg.no
-    ..
-    Content-Type: text/html; charset=iso-8859-1
+```perl
+$ GET http://vg.no
+..
+Content-Type: text/html; charset=iso-8859-1
+```
 
 ---
 
