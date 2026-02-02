@@ -40,3 +40,4 @@ If you'd like me to give a talk about something, give me a shout at
 - emacs: Spell checking
 - kafka: [Performance tuning](kafka-performance-tuning)
 - kafka: [TCP connections](kafka-tcp-connections)
+- unix: [Character sets and encodings](character-encodings)

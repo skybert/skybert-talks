@@ -627,7 +627,9 @@ Java's
 [internal representation of strings ](https://docs.oracle.com/javase/7/docs/technotes/guides/intl/overview.html)
 is UTF-16.
 
-    final String name = getNameFromFacebook(id);
+```java
+final String name = getNameFromFacebook(id);
+```
 
 ---
 
@@ -762,7 +764,7 @@ BreakIterator.getCharacterInstance();
 
 ```
 
-----
+---
 
 ## Make your builds safe
 
@@ -953,7 +955,7 @@ itself are stored and displayed:
  final static String PRODUKT = "UFØ";
 ```
 
-----
+---
 
 ## Myth #1 busted
 
@@ -1150,9 +1152,17 @@ So to sum ut, let's take that <h1>Quiz</h1> again
 
 ## Summary
 
+---
+
+## Summary
+
 > for the impatient
 
-- Use UTF-8 everywhere <span class="fragment">✓</span>
+---
+
+## tl;dr
+
+Use UTF-8 everywhere <span class="fragment">✓</span>
 
 ---
 
