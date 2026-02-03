@@ -1,5 +1,3 @@
-Importance: high
-
 # Squares & � marks
 
 > An adventure into the world of character sets and encodings
@@ -20,9 +18,8 @@ always come back to haunt me.
 
 ## 👻
 
-<span class="fragment">Date conversion</span>
-
-<span class="fragment">Character encoding</span>
+1. Date conversion <!-- .element: class="fragment" -->
+2. Character encoding <!-- .element: class="fragment" -->
 
 ---
 
