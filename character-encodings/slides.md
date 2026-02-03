@@ -605,7 +605,7 @@ for i, r := range s {
 
 ---
 
-## Get code point and bytes in one go
+## Get code point and number of bytes in one go (pun intended)
 
 ```go
 codePoint, size := utf8.DecodeRuneInString(s)
@@ -752,13 +752,12 @@ BreakIterator.getCharacterInstance();
 
 ## Maven
 
-> Ever seen this one?
+Ever seen this one?
 
-```
+```text
 [WARNING] File encoding has not been set,
    using platform encoding UTF-8,
    i.e. build is platform dependent!
-
 ```
 
 ---
@@ -777,19 +776,28 @@ BreakIterator.getCharacterInstance();
 
 ## You can now use UTF-8 in your source files
 
-A ♥ looks so much better than `\u2665`
+A ❤️ looks so much better than `\u2764\uFE0F`
 
 ---
 
-## XML & JSON
+## XML
 
-    <?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+```
 
 - The [XML specification](http://www.w3.org/TR/xml/#charencoding) says
 the standard encoding is [UTF-8](http://en.wikipedia.org/wiki/UTF-8)
 - All XML parsers must as a minimum support UTF-8
-- JSON [must be encoded](https://www.ietf.org/rfc/rfc4627.txt) in a
-  Unicode encoding, UTF-8 is default
+
+---
+
+## JSON
+
+The [JSON spec says](https://www.ietf.org/rfc/rfc4627.txt):
+
+> JSON text SHALL be encoded in Unicode. The default encoding is UTF-8.
+
 
 ---
 
@@ -851,7 +859,7 @@ hello-without-bom.txt: Unicode text, UTF-8 text
 
 ```perl
 $ head -c 3 hello-with-bom.txt | hexdump -C
-00000000  ef bb bf                                          |...|
+00000000  ef bb bf                    |...|
 00000003
 ```
 
@@ -866,24 +874,24 @@ $ head -c 3 hello-with-bom.txt | hexdump -C
 
 ---
 
-## Convert text file to another encoding
+## Convert file to another encoding
 
 Convert a text file from one character encoding to another.
 
 ```perl
-$ iconv -f IBM273 -t UTF-8 file.txt > converted.txt
+$ iconv -f IBM273 -t UTF-8 file.txt > file-with-utf-8.txt
 ```
 
 ---
 
 ## HTTP
 
-When we surf on [facebook.com](http://facebook.com) or write Java code
-that consume REST, RPC over HTTP and SOAP services, the server says
-which encoding the contents are serialised with:
+When we surf on [facebook.com](http://facebook.com) or write
+applications that consume a web services, the server tells us which
+encoding the contents are serialised with:
 
 ```perl
-$ GET http://vg.no
+$ curl -I http://vg.no
 ..
 Content-Type: text/html; charset=iso-8859-1
 ```
@@ -911,7 +919,7 @@ Content-Type: text/html; charset=iso-8859-1
 
 ## HTTP
 
-- HTTP wanted to keep the terminology consistent, but acknowledges:
+HTTP wanted to keep the terminology consistent, but acknowledged:
 
 > Note: This use of the term "character set" is more commonly referred
 > to as a "character encoding." However, since HTTP and MIME share the
