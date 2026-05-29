@@ -23,6 +23,10 @@ always come back to haunt me.
 
 ---
 
+## Production stop
+
+---
+
 ## Even Jira
 
 <img src="jira-encoding-tweet.png" alt="jira encoding tweet"/>
@@ -290,8 +294,8 @@ Endless <h2>possibilities</h2> with 8 bits
 ## Unicode
 
 - Caters for all characters and letters in all dead and spoken languages
-- Has today more than 110 000 characters
-- And plenty of room to spare
+- Has today more than 159,801 characters
+- And plenty of room to spare (1,114,112 characters possible)
 
 ---
 

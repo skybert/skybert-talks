@@ -24,6 +24,8 @@ func main() {
 	show_utf8_details("a")
 	show_utf8_details("å")
 	show_utf8_details("👻")
+	show_utf8_details("☁️")
 	show_utf8_details("👍🏽")
+	show_utf8_details("❤️")
 	show_utf8_details("你好嗎")
 }
