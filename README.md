@@ -39,6 +39,9 @@ If you'd like me to give a talk about something, give me a shout at
 - emacs: C and C++ setup
 - emacs: Read RSS and Atom feeds
 - emacs: [Spell checking](emacs-spellcheck/slides.md)
+- emacs: Spell checking
+- emacs: Spell checking
+- emacs: [Swift setup](emacs-swift)
 - kafka: [Performance tuning](kafka-performance-tuning)
 - kafka: [TCP connections](kafka-tcp-connections)
 - unix: [Make your Linux machine ISO 27001 compliant](unix-linux-iso-27001/slides.md)
