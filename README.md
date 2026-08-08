@@ -16,6 +16,7 @@ If you'd like me to give a talk about something, give me a shout at
 1. bash: [bash coding 006 unit testing](bash-coding-006-unit-testing/slides.md) ~ [video](https://youtu.be/XsdHnQ9OruQ)
 1. desktop: [Window Manager](desktop-window-maker/slides.md) ~ [video](https://www.youtube.com/watch?v=nS9W-wlJHPA)
 1. desktop: [x11](desktop-x11-apps/slides.md) ~ [video](https://youtu.be/uBw9GPkKt0k)
+1. desktop: [Make macOS as Unix workstation](desktop-macos-unix/) ~ [video](https://www.youtube.com/watch?v=Z-hzCJoFl8g)
 1. emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt/slides.md) ~ [video](https://www.youtube.com/watch?v=H8jvhz0CGzU)
 1. emacs: [Jumping around](emacs-jump-around/slides.md) ~ [video](https://youtu.be/BHWL13sQBWY)
 1. emacs: [Pretty org reports](emacs-pretty-org-reports/slides.md) ~ [video](https://youtu.be/QCAsBBDFN60)
@@ -34,7 +35,6 @@ If you'd like me to give a talk about something, give me a shout at
 - desktop: Budgie
 - desktop: GhostBSD
 - desktop: Trinity
-- desktop: [Make macOS as Unix workstation](desktop-macos-unix/)
 - emacs: C and C++ setup
 - emacs: Read RSS and Atom feeds
 - emacs: Spell checking
