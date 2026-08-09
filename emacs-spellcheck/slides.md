@@ -4,13 +4,36 @@
 - ispell
 - hunspell
 - jinx
+- flyspell
+
+---
+
+## Agenda
+
+- Language Tool
+
+---
+
+## ispell
+
+---
+
+## aspell
+
+---
+
+## hunspell
 
 ---
 
 ## jinx
 
 - libenchant
-- works with [Apple Spell]()
+- Works with Apple Spell
+
+---
+
+## flyspell
 
 ---
 

@@ -37,7 +37,7 @@ If you'd like me to give a talk about something, give me a shout at
 - desktop: [GhostBSD](desktop-ghostbsd/slides.md)
 - emacs: C and C++ setup
 - emacs: Read RSS and Atom feeds
-- emacs: Spell checking
+- emacs: [Spell checking](emacs-spellcheck/slides.md)
 - kafka: [Performance tuning](kafka-performance-tuning)
 - kafka: [TCP connections](kafka-tcp-connections)
 - unix: [Character sets and encodings](character-encodings)
