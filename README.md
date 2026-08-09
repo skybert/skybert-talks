@@ -17,6 +17,7 @@ If you'd like me to give a talk about something, give me a shout at
 1. desktop: [Window Manager](desktop-window-maker/slides.md) ~ [video](https://www.youtube.com/watch?v=nS9W-wlJHPA)
 1. desktop: [x11](desktop-x11-apps/slides.md) ~ [video](https://youtu.be/uBw9GPkKt0k)
 1. desktop: [Make macOS as Unix workstation](desktop-macos-unix/) ~ [video](https://www.youtube.com/watch?v=Z-hzCJoFl8g)
+1. desktop: [Trinity Desktop Environment](desktop-trinity-brings-back-kde3) ~ [videp](https://youtu.be/3miXDJsNaiM)
 1. emacs: [ChatGPT, OpenAI &amp; Copilot](emacs-openai-and-chatgpt/slides.md) ~ [video](https://www.youtube.com/watch?v=H8jvhz0CGzU)
 1. emacs: [Jumping around](emacs-jump-around/slides.md) ~ [video](https://youtu.be/BHWL13sQBWY)
 1. emacs: [Pretty org reports](emacs-pretty-org-reports/slides.md) ~ [video](https://youtu.be/QCAsBBDFN60)
@@ -33,11 +34,12 @@ If you'd like me to give a talk about something, give me a shout at
 - bash: HTTP with curl
 - bash: [find](bash-find)
 - desktop: Budgie
-- desktop: GhostBSD
-- desktop: Trinity
+- desktop: [GhostBSD](desktop-ghostbsd/slides.md)
 - emacs: C and C++ setup
 - emacs: Read RSS and Atom feeds
 - emacs: Spell checking
 - kafka: [Performance tuning](kafka-performance-tuning)
 - kafka: [TCP connections](kafka-tcp-connections)
 - unix: [Character sets and encodings](character-encodings)
+- unix: [macOS Unix shell caveats](unix-macos-shell/slides.md)
+- unix: [Make your Linux machine ISO 27001 compliant](unix-linux-iso-27001/slides.md)
