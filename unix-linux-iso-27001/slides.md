@@ -7,6 +7,10 @@
 
 ---
 
+## Full Disk Encryption
+
+---
+
 ## Microsoft Defender Advanced Threat Protection for Endpoints
 
 [aur/mdatp-bin](https://aur.archlinux.org/packages/mdatp-bin)
