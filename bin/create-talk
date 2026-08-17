@@ -36,6 +36,7 @@ main() {
       "${sed}" -i "s#TALK_TITLE_BIG#${_title_big}#" "${f}"
       "${sed}" -i "s#TALK_TITLE_POST#${_title_post}#" "${f}"
       "${sed}" -i "s~TALK_TAGS~${_tags}~" "${f}"
+      printf "%s\n" "${f}"
     done
 }
 

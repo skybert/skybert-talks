@@ -46,4 +46,4 @@ If you'd like me to give a talk about something, give me a shout at
 - unix: Network diagnostics with [ss](unix-ss-network-diag/slides.md)
 - unix: [Make your Linux machine ISO 27001 compliant](unix-linux-iso-27001/slides.md)
 - unix: [macOS Unix shell caveats](unix-macos-shell/slides.md)
-
+- unix: [tmux](unix-tmux/slides.md)
