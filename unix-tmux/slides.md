@@ -3,6 +3,14 @@
 
 ---
 
+## Resizing balancing panes
+
+```text
+$ tmux select-layout even-horizontal
+```
+
+---
+
 ## Summary
 
 ---
