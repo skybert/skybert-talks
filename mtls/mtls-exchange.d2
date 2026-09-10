@@ -1,0 +1,9 @@
+#
+# Generate diagram with:
+#
+#     d2 --layout elk --theme 200 mtls-exchange.d2
+#
+
+direction: right
+mtls-server -> mtls-client: send server-cert
+mtls-client -> mtls-server: send client-cert

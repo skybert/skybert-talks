@@ -1,0 +1,16 @@
+#
+# Generate diagram with:
+#
+#     d2 --layout elk --theme 200 mtls-certs.d2
+#
+
+ca {
+  ca-cert -> client-cert: sign
+  ca-cert -> server-cert: sign
+}
+
+mtls-server -> ca: load ca-cert
+mtls-server -> ca: load server-cert
+mtls-client -> ca: load ca-cert
+mtls-client -> ca: load client-cert
+
