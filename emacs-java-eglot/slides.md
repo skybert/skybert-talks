@@ -60,7 +60,7 @@ environment:
 $ cd /path/to/src
 $ direnv allow .
 $ echo >> .envrc <<EOF
-export JAVA_TOOL_OPTIONS=/home/torstein/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar
+export JAVA_TOOL_OPTIONS="-javaagent:/home/torstein/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar"
 EOF
 ```
 
